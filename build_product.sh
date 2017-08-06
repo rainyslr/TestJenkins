@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-shellpath=$(cd `diname $0`; pwd)
-cd $shellpath
+shellpath=$(cd `dirname $0`; pwd)
 ./gradlew clean --info --stacktrace
 ./gradlew assembleRelease --info --stacktrace
